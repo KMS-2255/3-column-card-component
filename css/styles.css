@@ -1,0 +1,109 @@
+/*Variables*/
+:root {
+  --primarycolor: hsl(31, 77%, 52%);
+  --secondarycolor:hsl(184, 100%, 22%);
+  --tertiarycolor:hsl(179, 100%, 13%);
+  --backgroundcolor:hsl(0, 0%, 95%);
+  --textcolor:hsla(0, 0%, 100%, 0.75);
+  --border-radius:8px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  background-color: var(--backgroundcolor);
+  font-size: 15px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    display:flex;
+    height:50vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    height:50vh;
+  }
+}
+.component {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:50vh;
+  width:30vh;
+  color: var(--textcolor);
+  padding: 40px;
+}
+  .component-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--backgroundcolor);
+  }
+  .component-description {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+  #component-1 {
+    background-color:var(--primarycolor);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+  #component-2 {
+    background-color:var(--secondarycolor);
+  }
+  #component-3 {
+    background-color:var(--tertiarycolor);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+
+.component-btn {
+   border-radius: 20px;
+   width:130px;
+   background-color: var(--backgroundcolor);
+   padding: 10px 10px;
+   border: none;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+#component-1 .component-btn {
+  color: var(--primarycolor);
+}
+
+#component-2 .component-btn {
+  color: var(--secondarycolor);
+}
+
+#component-3 .component-btn {
+  color: var(--tertiarycolor);
+}
+
+.button:hover {
+   border: none;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+}
